@@ -1,0 +1,22 @@
+.swiper__images {
+  padding: 10px;
+  max-width: 100%;
+}
+.swiper {
+  display: flex;
+  align-items: center;
+}
+
+.swiper__button {
+  color: black !important;
+  width: 50px !important;
+  height: 50px !important;
+}
+@media only screen and (max-width: 1024px) {
+  .swiper__images {
+    max-width: 70%;
+  }
+  .swiper {
+    max-width: 70%;
+  }
+}
