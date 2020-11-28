@@ -1,0 +1,17 @@
+.miniswiper{
+    display: flex;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.miniswiper__image{
+    padding: 5px;
+    width: 200px;
+}
+#current{
+    z-index: 1;
+}
+.previous{
+    transform: translateY(20px);
+}

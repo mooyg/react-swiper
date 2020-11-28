@@ -1,0 +1,22 @@
+.swiper__images{
+    padding: 10px;
+    animation-timing-function: linear;
+
+    object-fit: contain;
+}
+.swiper__main{
+    display: flex;
+    width: 700px;
+    height: 400px;
+    align-items: center;
+}
+.swiper{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.swiper__button{
+    color: black !important;
+    width: 50px !important;
+    height: 50px !important;
+}
