@@ -5,9 +5,11 @@ import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import { Button } from "@material-ui/core";
 import { useSwipeable } from "react-swipeable";
 import MiniSwiper from "./MiniSwiper";
+import { motion, AnimatePresence } from "framer-motion"
 interface Props {
   images: string[];
 }
+//TODO: map and do some styling on the images so i can add some animations. This sucks overall
 const Swiper = (props: Props) => {
   const [index, setIndex] = useState(0);
   const { images } = props;
@@ -51,7 +53,11 @@ const Swiper = (props: Props) => {
             <ChevronLeftIcon />
           </Button>
         </div>
-        <img {...handlers} onWheel={handleScrollWheel} draggable={false} className={"swiper__images"} src={images[index]} alt={""} />
+          <AnimatePresence>
+              <motion.img {...handlers} initial={{ x: 300, opacity: 0 }}
+                   animate={{ x: 0, opacity: 1 }}
+                   exit={{ x: -300, opacity: 0 }} onWheel={handleScrollWheel} draggable={false} className={"swiper__images"} src={images[index]} alt={""} />
+          </AnimatePresence>
         <div className={"swiper__button"}>
           <Button onClick={handleIncrement}>
             <ChevronRightIcon />

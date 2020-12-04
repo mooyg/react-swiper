@@ -7,7 +7,7 @@
 .swiper__main{
     display: flex;
     width: 700px;
-    height: 400px;
+     height: 400px;
     align-items: center;
 }
 .swiper{

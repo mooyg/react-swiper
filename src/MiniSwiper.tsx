@@ -22,7 +22,7 @@ const MiniSwiper = (props: Props) => {
             {index === images.length - 1 ? (
                 <img className={'miniswiper__image previous'} src={images[0]} alt={''}/>
             ) : (
-                <img className={'miniswiper__image previous'} src={images[index + 1]} alt={''}/>
+                <img className={'miniswiper__image previous '} src={images[index + 1]} alt={''}/>
             )}
         </div>
     );
