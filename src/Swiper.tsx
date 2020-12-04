@@ -9,7 +9,7 @@ import { motion, AnimatePresence } from "framer-motion"
 interface Props {
   images: string[];
 }
-//TODO: map and do some styling on the images so i can add some animations. This sucks overall
+//TODO: map and do some styling on the images so i can add some animations. This sucks overall.
 const Swiper = (props: Props) => {
   const [index, setIndex] = useState(0);
   const { images } = props;
